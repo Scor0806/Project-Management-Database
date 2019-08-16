@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<style type="text/css">
+h1 {
+	font-family: Arial;   /* Times New Roman, Georgia, Arial, Verdana, Courier New, Lucida Console */
+	font-style: normal;   /* normal, italic, oblique */
+	font-weight: bold;    /* normal, bold */
+	font-size: 40px;
+	color: rgb(0,0,255);
+}
+body {
+	background-image: url('images/dbms_bkg1.jpg');
+	width: auto;
+	height: auto;
+	background-position: 0px 0px;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    background-size: cover;
+}
+</style>
+
+</head>
+
+<body style="background-color:#E0FFFF;">
+<div id="g_user_name"></div>
+<div id="g_user_empid"></div>
+<div id="g_user_level"></div>
+
+<center>
+<title>Project Management System Login</title>
+	<link rel="stylesheet" href="css/page_styles.css"/>
+	<script src="includes/code_js.js"></script>
+</center>
+
+<center>
+<h1>Project Management System</h1>
+<button class="button01" id="show_login">Login</button>
+
+<div class="container" id="loginbox">
+	<div class="main">
+		<h2>Project Mgt System Login</h2>
+		<form id="form_id" method="post" name="myform">
+		<label>User Name :</label><br>
+		<input type="text" name="username" id="username"/><br>
+		<label>Password :</label><br>
+		<input type="password" name="password" id="password" onkeypress="key_press_pwd(event)"/>
+		<input type="button" value="Login" id="submit" onclick="validate()"/>
+		<center><button id="hide_login">Close</button></center> 
+		</form>
+	</div>
+	
+</div>
+</center>
+
+<script>
+function key_press_pwd(evt) {
+	var the_key = event.which || event.keyCode;  
+	// The enter key has been press so, do validation.	
+	if(the_key === 13) {
+		// To prevent the default behaivor of submitting the form
+		// and redirecting back to the form webpag.
+		evt.preventDefault();
+		// Now can call the validate function.
+		validate();
+	}
+	return false;
+}
+
+document.getElementById("show_login").addEventListener("click", function() {	
+	DoLogin("show");
+});
+
+document.getElementById("hide_login").addEventListener("click", function() {
+	DoLogin("hide"); 
+});
+
+</script>
+
+</body>
+</html>

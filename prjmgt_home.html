@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+<body bgcolor="#E0FFFF">
+
+<link rel="stylesheet" href="css/page_styles.css"/>
+<script src="includes/code_js.js"></script>
+
+<h3><div style="text-align: center;">
+<strong>Welcome to the</strong>
+</div></h3>
+
+<h1><div style="text-align: center;">
+<font color="blue"><u>
+Project Management System
+</u></font>
+<br><button id="login_out">Logout</button>
+<p></p>
+</div></h1>
+
+<h3><div style="text-align: center;">
+<p>Go to:</p>
+</div></h3>
+
+
+<div style="text-align: center;">
+<!-- 
+LightBlue    = #ADD8E6
+LightSkyBlue = #87CEFA
+SkyBlue      = #87CEEB
+Aquamarine   = #7FFFD4
+Aqua         = #00FFFF
+White        = #FFFFFF
+Black        = #000000
+Silver       = #C0C0C0
+Grey         = #808080
+LightGrey    = #D3D3D3
+LightCyan    = #E0FFFF  <==
+MintCream    = #F5FFFA
+Blue         = #0000FF
+Navy Blue    = #000080
+WhiteSmoke   = #F5F5F5
+GhostWhite   = #F8F8FF
+-->
+ 
+<button class="button02" id="go_projects">Projects</button>
+<p></p>
+<button class="button02" id="go_customers">Customers</button>
+<p></p>
+<button class="button02" id="go_departments">Departments</button>
+<p></p>
+<button class="button02" id="go_employees">Employees</button>
+<p></p>
+<button class="button02" id="go_tasks">Tasks</button>
+<p></p>
+
+<script>
+document.getElementById("login_out").addEventListener("click", function() {	
+	DoLogout("show");
+});
+
+document.getElementById("go_projects").addEventListener("click", function() {	
+	GoToPmSystemPage(1);
+});
+
+document.getElementById("go_customers").addEventListener("click", function() {	
+	GoToPmSystemPage(2);
+});
+
+document.getElementById("go_departments").addEventListener("click", function() {	
+	GoToPmSystemPage(3);
+});
+
+document.getElementById("go_employees").addEventListener("click", function() {	
+	GoToPmSystemPage(4);
+});
+
+document.getElementById("go_tasks").addEventListener("click", function() {	
+	GoToPmSystemPage(5);
+});
+
+</script>
+</div>
+</body>
+</head>
+</html>
