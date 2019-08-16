@@ -2,7 +2,8 @@
 
 ####    This is a demo project mainly to develop a project management system database a web browser as the front end.
 ####    Currently using GitHub Pages only the Html sections can be seen since GitHub doesn't allow PHP.
-####    If cloning the repository a local server or free online server can be used to access the php files
+####    If cloning the repository, a local server or free online server can be used to access the php files
+
 
 ####    Default for MySQL connection
 ####    host: localhost
@@ -11,12 +12,12 @@
 ####    port: 3306
 
 ##  Username:
-##  admin
-##  employee
+###  admin
+###  employee
 
 ##  Password:
-##  admin
-##  employee
+###  admin
+###  employee
 
 ### Tools Used:
 ### MySQL
