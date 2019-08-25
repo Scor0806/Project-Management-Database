@@ -54,7 +54,7 @@ function DoLogout() {
 	sessionStorage.setItem("g_user_name", "");
 	sessionStorage.setItem("g_user_empid", "0");
 	sessionStorage.setItem("g_user_level", "0");
-	window.location.replace("prjmgt_login.html");
+	window.location.replace("index.html");
 }
 
 function GoToPmSystemPage(page_number) {
